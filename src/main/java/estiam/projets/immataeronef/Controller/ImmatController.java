@@ -28,7 +28,4 @@ public class ImmatController {
 		
 		return result.get();
 	}
-
-
-	
 }

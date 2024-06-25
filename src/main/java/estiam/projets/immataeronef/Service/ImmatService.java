@@ -38,18 +38,18 @@ public class ImmatService {
 		return Optional.ofNullable(new AeronefDTO(immat, constructeur, modele, aerodromeAttache));
 	}
 
-	public List<ConstructeurDTO> getNbAppareil() {
-		Map<String, Integer> constructeurCount = new HashMap<>();
+	public List<ConstructeurDTO> getAeronefCountByConstructor() {
+		Map<String, Integer> aeronefCountByConstructor = new HashMap<>();
 		for (Map<String, String> entry : entries.values()) {
 			String constructeur = entry.get("CONSTRUCTEUR");
 			if (!constructeur.isEmpty()) {
 				String upperConstructeur = constructeur.toUpperCase();
-				constructeurCount.put(upperConstructeur, constructeurCount.getOrDefault(upperConstructeur, 0) + 1);
+				aeronefCountByConstructor.put(upperConstructeur, aeronefCountByConstructor.getOrDefault(upperConstructeur, 0) + 1);
 			}
 		}
 
 		List<ConstructeurDTO> result = new ArrayList<>();
-		for (Map.Entry<String, Integer> entry : constructeurCount.entrySet()) {
+		for (Map.Entry<String, Integer> entry : aeronefCountByConstructor.entrySet()) {
 			result.add(new ConstructeurDTO(entry.getKey(), entry.getValue()));
 		}
 
