@@ -10,7 +10,7 @@
 ## Contexte du projet
 L’annuaire des immatriculations des aéronefs en France est un projet visant à créer une base de données exhaustive et accessible des immatriculations des aéronefs en France.
 
-En France, tous les aéronefs doivent être immatriculés auprès des autorités compétentes, conformément à la réglementation de l'aviation civile. Cette immatriculation est essentielle pour :
+En France, tous les aéronefs doivent être immatriculés auprès des autorités compétentes, conformément à la réglementation de l'aviation civile. Cette immatriculation est essentielle pour:
 
 - Assurer la traçabilité des aéronefs
 - Garantir la responsabilité des propriétaires et opérateurs
