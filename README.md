@@ -8,7 +8,7 @@
 - Ludovic MOYO KAMKUIMO
 
 ## Contexte du projet
-L’annuaire des immatriculations des aéronefs en France est un projet visant à créer une base de données exhaustive et accessible des immatriculations des aéronefs en France.
+L’annuaire des immatriculations des aéronefs en France est un projet visant à créer une base de données exhaustive et accessible des immatriculations des aéronefs.
 
 En France, tous les aéronefs doivent être immatriculés auprès des autorités compétentes, conformément à la réglementation de l'aviation civile. Cette immatriculation est essentielle pour:
 
@@ -68,3 +68,13 @@ Cette application fournit une API REST pour accéder aux informations sur les a�
 1. Ouvrir son invite de commande (terminal) et exécuter la commande :
    ```sh
    git clone https://github.com/Tamim94/immataeronef.git
+
+
+2. Ouvrir le projet dans son IDE et lancer l'application.
+3. Ouvrir le navigateur pour tester les APIs suivantes:
+-  /constructeurs, qui renvoie une liste avec le nombre d’appareils par constructeurs, seulement s’il y a plus d’un appareil par constructeur.
+-    ![image](https://github.com/Tamim94/immataeronef/assets/88946894/91cc802e-fe3a-411d-865f-4bdd135cbf56)
+-  /aeronef/{immat}, qui renvoie l'information sur l'aéronef en fonction du numéro matricule ({immat}). Remplacer {immat} par un numéro matricule, par exemple "F-GHDD".
+-  ![image](https://github.com/Tamim94/immataeronef/assets/88946894/ef85efd2-4b80-4b38-a3a8-bcad95aec5e4)
+3. Exécuter les tests dans le repertoire test à la racine du projet
+     ![image](https://github.com/Tamim94/immataeronef/assets/88946894/91cc802e-fe3a-411d-865f-4bdd135cbf56)
