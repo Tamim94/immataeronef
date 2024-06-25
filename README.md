@@ -77,4 +77,5 @@ Cette application fournit une API REST pour accéder aux informations sur les a�
 -  /aeronef/{immat}, qui renvoie l'information sur l'aéronef en fonction du numéro matricule ({immat}). Remplacer {immat} par un numéro matricule, par exemple "F-GHDD".
 -  ![image](https://github.com/Tamim94/immataeronef/assets/88946894/ef85efd2-4b80-4b38-a3a8-bcad95aec5e4)
 3. Exécuter les tests dans le repertoire test à la racine du projet
-     ![image](https://github.com/Tamim94/immataeronef/assets/88946894/91cc802e-fe3a-411d-865f-4bdd135cbf56)
+    ![image (3)](https://github.com/Tamim94/immataeronef/assets/88946894/cf066dfe-172f-42e9-8797-7f16f3865d51)
+
