@@ -1,4 +1,4 @@
-package estiam.projets.immataeronef.Service;
+package estiam.projets.immataeronef.service;
 
 import java.io.File;
 import java.io.IOException;

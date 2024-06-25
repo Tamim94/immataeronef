@@ -3,7 +3,7 @@ package estiam.projets.immataeronef.controller;
 import static jakarta.servlet.http.HttpServletResponse.SC_NO_CONTENT;
 
 import estiam.projets.immataeronef.DTO.AeronefDTO;
-import estiam.projets.immataeronef.Service.ImmatService;
+import estiam.projets.immataeronef.service.ImmatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
