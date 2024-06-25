@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class NbAppareilDTO {
+public class ConstructeurDTO {
     private String constructeur;
     private long nbAppareil;
 }

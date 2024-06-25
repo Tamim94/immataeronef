@@ -1,4 +1,4 @@
-package estiam.projets.immataeronef;
+package estiam.projets.immataeronef.data;
 
 import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES;
 import static java.net.http.HttpClient.Redirect.ALWAYS;

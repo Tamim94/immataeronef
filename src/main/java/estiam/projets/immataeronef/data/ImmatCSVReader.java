@@ -1,4 +1,4 @@
-package estiam.projets.immataeronef;
+package estiam.projets.immataeronef.data;
 
 import static java.util.Arrays.asList;
 import static java.util.Collections.unmodifiableMap;

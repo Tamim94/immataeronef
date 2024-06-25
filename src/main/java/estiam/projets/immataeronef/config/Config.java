@@ -1,5 +1,6 @@
-package estiam.projets.immataeronef;
+package estiam.projets.immataeronef.config;
 
+import estiam.projets.immataeronef.data.ImmatCSVReader;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -7,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class Config {
 
 	@Bean
-	ImmatCSVReader getImmatCSVReader() {
+    ImmatCSVReader getImmatCSVReader() {
 		return new ImmatCSVReader();
 	}
 	

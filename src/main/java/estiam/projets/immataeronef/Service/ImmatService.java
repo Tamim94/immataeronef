@@ -4,10 +4,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-import estiam.projets.immataeronef.AppConf;
+import estiam.projets.immataeronef.config.AppConf;
 import estiam.projets.immataeronef.DTO.AeronefDTO;
-import estiam.projets.immataeronef.DTO.NbAppareilDTO;
-import estiam.projets.immataeronef.ImmatCSVReader;
+import estiam.projets.immataeronef.DTO.ConstructeurDTO;
+import estiam.projets.immataeronef.data.ImmatCSVReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,16 +38,19 @@ public class ImmatService {
 		return Optional.ofNullable(new AeronefDTO(immat, constructeur, modele, aerodromeAttache));
 	}
 
-	public List<NbAppareilDTO> getNbAppareil() {
+	public List<ConstructeurDTO> getNbAppareil() {
 		Map<String, Integer> constructeurCount = new HashMap<>();
 		for (Map<String, String> entry : entries.values()) {
 			String constructeur = entry.get("CONSTRUCTEUR");
-			constructeurCount.put(constructeur, constructeurCount.getOrDefault(constructeur, 0) + 1);
+			if (!constructeur.isEmpty()) {
+				String upperConstructeur = constructeur.toUpperCase();
+				constructeurCount.put(upperConstructeur, constructeurCount.getOrDefault(upperConstructeur, 0) + 1);
+			}
 		}
 
-		List<NbAppareilDTO> result = new ArrayList<>();
+		List<ConstructeurDTO> result = new ArrayList<>();
 		for (Map.Entry<String, Integer> entry : constructeurCount.entrySet()) {
-			result.add(new NbAppareilDTO(entry.getKey(), entry.getValue()));
+			result.add(new ConstructeurDTO(entry.getKey(), entry.getValue()));
 		}
 
 		return result;

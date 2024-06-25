@@ -1,4 +1,4 @@
-package estiam.projets.immataeronef;
+package estiam.projets.immataeronef.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
