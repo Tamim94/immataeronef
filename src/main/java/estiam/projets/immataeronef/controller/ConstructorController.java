@@ -1,4 +1,4 @@
-package estiam.projets.immataeronef.Controller;
+package estiam.projets.immataeronef.controller;
 
 import java.util.List;
 
