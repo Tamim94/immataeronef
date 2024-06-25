@@ -1,7 +1,9 @@
-package estiam.projets.immataeronef;
+package estiam.projets.immataeronef.Controller;
 
 import static jakarta.servlet.http.HttpServletResponse.SC_NO_CONTENT;
 
+import estiam.projets.immataeronef.DTO.AeronefDTO;
+import estiam.projets.immataeronef.Service.ImmatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,13 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.servlet.http.HttpServletResponse;
 
-import java.util.List;
-
 @RestController
 public class ImmatController {
 
 	@Autowired
-	ImmatService immatService;
+    ImmatService immatService;
 	
 	@GetMapping("/aeronef/{immat}")
 	public AeronefDTO getAeronef(@PathVariable("immat") String immat, HttpServletResponse response) {

@@ -1,6 +1,9 @@
-package estiam.projets.immataeronef;
+package estiam.projets.immataeronef.Controller;
 
 import java.util.List;
+
+import estiam.projets.immataeronef.DTO.NbAppareilDTO;
+import estiam.projets.immataeronef.Service.ImmatService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +16,7 @@ public class NbAppareilController {
         this.immatService = immatService;
     }
 
-    @GetMapping("/aeronef/nbAppareil")
+    @GetMapping("/constructeurs")
     public List<NbAppareilDTO> getNbAppareil() {
         return immatService.getNbAppareil();
     }

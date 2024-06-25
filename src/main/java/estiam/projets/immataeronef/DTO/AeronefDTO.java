@@ -1,4 +1,4 @@
-package estiam.projets.immataeronef;
+package estiam.projets.immataeronef.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
