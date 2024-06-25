@@ -73,9 +73,9 @@ Cette application fournit une API REST pour accéder aux informations sur les a�
 2. Ouvrir le projet dans son IDE et lancer l'application.
 3. Ouvrir le navigateur pour tester les APIs suivantes:
 -  /constructeurs, qui renvoie une liste avec le nombre d’appareils par constructeurs, seulement s’il y a plus d’un appareil par constructeur.
--    ![image](https://github.com/Tamim94/immataeronef/assets/88946894/91cc802e-fe3a-411d-865f-4bdd135cbf56)
+    ![image](https://github.com/Tamim94/immataeronef/assets/88946894/91cc802e-fe3a-411d-865f-4bdd135cbf56)
 -  /aeronef/{immat}, qui renvoie l'information sur l'aéronef en fonction du numéro matricule ({immat}). Remplacer {immat} par un numéro matricule, par exemple "F-GHDD".
--  ![image](https://github.com/Tamim94/immataeronef/assets/88946894/ef85efd2-4b80-4b38-a3a8-bcad95aec5e4)
+  ![image (4)](https://github.com/Tamim94/immataeronef/assets/88946894/d9704368-ec24-4fb8-a687-972325acaadc)
 3. Exécuter les tests dans le repertoire test à la racine du projet
     ![image (3)](https://github.com/Tamim94/immataeronef/assets/88946894/cf066dfe-172f-42e9-8797-7f16f3865d51)
 
