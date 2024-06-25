@@ -42,15 +42,15 @@ Cette application fournit une API REST pour accéder aux informations sur les a�
   La classe `ImmatCSVReader` a été modifiée pour retourner directement le dictionnaire `entries` contenant les données des aéronefs après le chargement du fichier CSV. Cela améliore la modularité et la réutilisation du code.
 
 - **Service ImmatService:**
-  La méthode `getNbAppareil` a été ajoutée pour calculer le nombre d'aéronefs par constructeur. Elle itère sur les données CSV, compte les occurrences par constructeur et retourne une liste d'objets `NbAppareilDTO`.
+  La méthode `getAeronefCountByConstructor` a été ajoutée pour calculer le nombre d'aéronefs par constructeur. Elle itère sur les données CSV, compte les occurrences par constructeur et retourne une liste d'objets `ConstructorDTO`.
 
   Le chargement du fichier CSV est maintenant effectué directement dans le constructeur, simplifiant le code.
 
-- **Contrôleur NbAppareilController:**
+- **Contrôleur ConstructorController:**
   Un nouveau contrôleur a été créé pour gérer l'endpoint `/constructeurs`. Il utilise le service `ImmatService` pour récupérer les données et les renvoyer sous forme de réponse JSON.
 
 - **DTO ConstructorDTO:**
-  Un nouveau Data Transfer Object (DTO) a été créé pour représenter le résultat du comptage des aéronefs par constructeur. Il contient les champs `constructeur` et `nbAppareil`.
+  Un nouveau Data Transfer Object (DTO) a été créé pour représenter le résultat du comptage des aéronefs par constructeur. Il contient les champs `name` pour le nom du constructeur et `count_aeronef` pour le nombre d'aeronefs du constructeur.
 
 ## Structure du projet
 - **Main.java:** Point d'entrée de l'application Spring Boot.
@@ -58,8 +58,8 @@ Cette application fournit une API REST pour accéder aux informations sur les a�
 - **ImmatService.java:** Fournit la logique métier pour accéder et traiter les données des aéronefs.
 - **ImmatController.java:** Gère l'endpoint pour récupérer les informations d'un aéronef par son immatriculation.
 - **ConstructorController.java:** Gère l'endpoint pour le comptage des aéronefs par constructeur.
-- **AeronefDTO.java:** DTO pour représenter les données d'un aéronef.
-- **ConstructorDTO.java:** DTO pour représenter le résultat du comptage.
+- **AeronefDTO.java:** Record pour représenter les données d'un aéronef.
+- **ConstructorDTO.java:** Record pour représenter le résultat du comptage.
 - **AppConf.java:** Classe de configuration pour lire le nom du fichier CSV depuis `application.properties`.
 - **Config.java:** Classe de configuration pour créer le bean `ImmatCSVReader`.
 - **application.properties:** Fichier de configuration contenant le chemin du fichier CSV.
